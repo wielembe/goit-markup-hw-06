@@ -15,6 +15,10 @@ body {
     fill: currentColor;
 }
 
+.user-email {
+    color: #fff;
+}
+
 .contact-svg {
     fill: currentColor;
 
@@ -210,6 +214,7 @@ h4 {
 
     font-weight: 700;
     color: #fff;
+    text-transform: uppercase;
 }
 .big-button {
     display: flex;
@@ -629,4 +634,30 @@ button {
     margin: 0;
 
     padding-left: 24px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.newsletter {
+    max-width: 570px;
+}
+.button-send {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #2196f3;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+}
+
+.mail-send-svg {
+    fill: #fff;
+}
+.email {
+    color: #fff;
 }
