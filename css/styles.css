@@ -639,8 +639,11 @@ button {
 
 .subscription {
     display: flex;
+    justify-content: flex-start;
 
     gap: 10px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .mail-box {
@@ -654,6 +657,8 @@ button {
 
 .newsletter {
     max-width: 570px;
+    padding-right: 0;
+    margin: 0 auto;
 }
 .button-send {
     display: flex;
