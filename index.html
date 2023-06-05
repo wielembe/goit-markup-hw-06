@@ -34,7 +34,7 @@
 
                     <div class="contact-up">
                         <a href="mailto:info@devstutio.com" class="contact">
-                            <svg class="contact-svg" width="16px" height="12px">
+                            <svg class="contact-svg" width="44px" height="16px">
                                 <use
                                     href="./images/icons.svg#icon-envelope"
                                 ></use>
@@ -43,7 +43,7 @@
                         >
 
                         <a href="phone:+121277224150" class="contact">
-                            <svg class="contact-svg" width="10px" height="16px">
+                            <svg class="contact-svg" width="40px" height="16px">
                                 <use
                                     href="./images/icons.svg#icon-smartphone-1"
                                 ></use>
@@ -535,12 +535,13 @@
                         <form name="mail-subscribe">
                             <div class="subscription">
                                 <label for="user-email">
-                                    Email
                                     <input
+                                        class="mail-box"
                                         type="email"
                                         name="email"
                                         id="user-email"
                                         placeholder="E-mail"
+                                        style="width: 358px"
                                     />
                                 </label>
 
@@ -566,6 +567,25 @@
         <div class="is-hidden backdrop" data-modal>
             <div class="modal">
                 <button class="modal-close" data-modal-close>X</button>
+                <form
+                    name="mail-subscribe"
+                    autocomplete="on"
+                    class="form-style"
+                >
+                    <h4 class="contact-header">
+                        Leave your information and we'll call you back
+                    </h4>
+
+                    <label for="user-name">
+                        <input
+                            class="name-box"
+                            type="text"
+                            name="text"
+                            id="user-name"
+                            style="width: 358px"
+                        />
+                    </label>
+                </form>
             </div>
         </div>
 
