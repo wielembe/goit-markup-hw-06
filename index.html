@@ -572,16 +572,76 @@
                     autocomplete="on"
                     class="form-style"
                 >
-                    <h4 class="contact-header">
+                    <h5 class="contact-header">
                         Leave your information and we'll call you back
-                    </h4>
-                    <label for="id-comment">Comments</label>
-                    <textarea
-                        id="id-comment"
-                        name="comment"
-                        placeholder="Enter the text"
-                    ></textarea>
-                    <button type="submit">Send</button>
+                    </h5>
+                    <div class="formula">
+                        <label for="username">Name</label>
+                        <div class="form-box">
+                            <svg class="form-svg" width="18px" height="18px">
+                                <use
+                                    href="./images/icons.svg#icon-person-black"
+                                ></use>
+                            </svg>
+                            <input
+                                id="username"
+                                name="username"
+                                type="name"
+                                class="text-field"
+                            />
+                        </div>
+
+                        <label for="email">E-mail</label>
+                        <div class="form-box">
+                            <svg class="form-svg" width="18px" height="18px">
+                                <use
+                                    href="./images/icons.svg#icon-email-black"
+                                ></use>
+                            </svg>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                class="text-field"
+                            />
+                        </div>
+
+                        <label for="phone">Telephone</label>
+                        <div class="form-box">
+                            <svg class="form-svg" width="18px" height="18px">
+                                <use
+                                    href="./images/icons.svg#icon-phone-black"
+                                ></use>
+                            </svg>
+                            <input
+                                id="phone"
+                                name="phone"
+                                type="phone"
+                                class="text-field"
+                            />
+                        </div>
+
+                        <label for="id-comment">Comments</label>
+                        <div class="form-box-comment">
+                            <textarea
+                                id="id-comment"
+                                name="comment"
+                                placeholder="Enter the text"
+                                class="text-window"
+                            ></textarea>
+                        </div>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="consent"
+                                value="consent"
+                                class="consent"
+                            />
+                            I agree with the newsletter and accept the Terms and
+                            Conditions
+                        </label>
+                        <button type="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
