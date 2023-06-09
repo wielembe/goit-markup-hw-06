@@ -578,47 +578,50 @@
                     <div class="formula">
                         <label for="username">Name</label>
                         <div class="form-box">
-                            <svg class="form-svg" width="18px" height="18px">
-                                <use
-                                    href="./images/icons.svg#icon-person-black"
-                                ></use>
-                            </svg>
                             <input
                                 id="username"
                                 name="username"
                                 type="name"
                                 class="text-field"
                             />
+                            <svg class="form-svg" width="18px" height="18px">
+                                <use
+                                    href="./images/icons.svg#icon-person-black"
+                                ></use>
+                            </svg>
+                            
                         </div>
 
                         <label for="email">E-mail</label>
                         <div class="form-box">
-                            <svg class="form-svg" width="18px" height="18px">
-                                <use
-                                    href="./images/icons.svg#icon-email-black"
-                                ></use>
-                            </svg>
                             <input
                                 id="email"
                                 name="email"
                                 type="email"
                                 class="text-field"
                             />
+                            <svg class="form-svg" width="18px" height="18px">
+                                <use
+                                    href="./images/icons.svg#icon-email-black"
+                                ></use>
+                            </svg>
+                            
                         </div>
 
                         <label for="phone">Telephone</label>
                         <div class="form-box">
-                            <svg class="form-svg" width="18px" height="18px">
-                                <use
-                                    href="./images/icons.svg#icon-phone-black"
-                                ></use>
-                            </svg>
                             <input
                                 id="phone"
                                 name="phone"
                                 type="phone"
                                 class="text-field"
                             />
+                            <svg class="form-svg" width="18px" height="18px">
+                                <use
+                                    href="./images/icons.svg#icon-phone-black"
+                                ></use>
+                            </svg>
+                            
                         </div>
 
                         <label for="id-comment">Comments</label>
@@ -630,18 +633,35 @@
                                 class="text-window"
                             ></textarea>
                         </div>
-                        <label>
+                        <label class="acceptance-label" for="user-acceptance">
                             <input
+                                class="acceptance-input checkbox-hidden"
                                 type="checkbox"
-                                name="consent"
-                                value="consent"
-                                class="consent"
+                                name="acceptance"
+                                id="user-acceptance"
                             />
-                            I agree with the newsletter and accept the Terms and
-                            Conditions
+                            <div class="acceptance-checked">
+                                <svg
+                                    class="checked-bacground"
+                                    width="16"
+                                    height="15"
+                                >
+                                    <use
+                                        href="images/icons.svg#icon-check"
+                                    ></use>
+                                </svg>
+                            </div>
+
+                            <div class="checkbox-text">
+                                I agree with the <a href="">Newsletter</a> and
+                                accept <a href="">the Terms and Conditions</a>
+                            </div>
                         </label>
-                        <button type="submit">Send</button>
+                        <div class="send-button">
+
+                        <button type="submit" class="order">Send</button>
                     </div>
+                    
                 </form>
             </div>
         </div>

@@ -702,6 +702,10 @@ button {
 }
 
 .form-svg {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+
     fill: black;
 }
 
@@ -720,9 +724,10 @@ button {
 }
 .text-field {
     width: 415px;
-    padding-right: 0;
+    padding-left: 20px;
     height: 38px;
     border: #fff;
+    outline: none;
 }
 
 .form-box-comment {
@@ -742,14 +747,112 @@ button {
     padding-right: 0;
     height: 116px;
     border: #fff;
+    outline: none;
 }
 
-.consent {
-    position: relative;
-    padding-top: 20px;
-    font-size: 14px;
+.form-box:hover,
+.form-box:focus {
+    cursor: pointer;
+    border: 1px solid #2196f3;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+    fill: #2196f3;
 }
-.form-svg:hover,
-.form-svg:focus {
-    color: blue;
+
+.text-field:hover + svg,
+.text-field:focus + svg {
+    cursor: pointer;
+    fill: #2196f3;
+
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+}
+
+.form-box-comment:hover,
+.form-box-comment:focus {
+    cursor: pointer;
+    border: 1px solid #2196f3;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+    fill: #2196f3;
+}
+.acceptance-label {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    padding-top: 0;
+
+    justify-content: center;
+    align-items: baseline;
+}
+.acceptance-label a {
+    color: #757575;
+}
+
+.acceptance-checked {
+    width: 16px;
+    height: 15px;
+    border: 2.5px solid #212121;
+    margin-right: 8px;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.acceptance-input:checked ~ .acceptance-checked {
+    border: 0 solid #212121;
+    background-color: #2196f3;
+    fill: #fff;
+}
+.acceptance-checked:hover,
+.acceptance-checked:focus {
+    border: 4px solid #212121;
+}
+.checked-bacground {
+    display: block;
+    visibility: hidden;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.acceptance-input:checked ~ .acceptance-checked .checked-bacground {
+    display: block;
+    visibility: visible;
+}
+.checkbox-hidden {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.order {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: #2196f3;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order:hover,
+.order:focus {
+    background-color: #f5f4fa;
+    color: #212121;
 }
